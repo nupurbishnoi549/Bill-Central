@@ -1,0 +1,65 @@
+import React, { useState } from 'react'
+import { faqData } from '../utils/Helper';
+
+const Faq = () => {
+    const [openSection, setOpenSection] = useState(0)
+
+    const toggleMenu = (id) => {
+        setOpenSection(openSection === id ? null : id)
+    }
+
+    return (
+        <div id='faq' className='pt-[162px] max-xl:pt-[80px] pb-[327px] max-lg:pt-16'>
+            <div className="w-full px-5">
+                <div className="max-w-[850px] mx-auto">
+                    <h2 className='font-normal text-5xl max-md:text-[32px] justify-center flex text-[#00171F] leading-[52.8px]'>
+                        Frequently Asked <span className='font-bold'> Questions</span>
+                    </h2>
+                    <p className='text-base font-normal leading-[150%] max-w-[556px] mx-auto text-center pt-4 pb-14'>Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum</p>
+                    <div className="space-y-6">
+                        {faqData.map((plan, index) => (
+                            <div
+                                key={index}
+                                className={`rounded-md p-[14px] transition-all duration-400 ease-in-out ${openSection === index
+                                    ? 'bg-[#003459] py-6'
+                                        : 'shadow-xl py-6 border border-transparent'
+                                    }`}
+                            >
+
+                                <button
+                                    onClick={() => toggleMenu(index)}
+                                    className={`w-full text-left font-normal cursor-pointer text-2xl flex leading-[26.4px] items-center max-md:text-lg ${openSection === index ? 'text-white' : 'text-[#00171F]'
+                                        }`}
+                                >
+                                    {plan.question}
+                                    <span className="ml-auto">
+                                        <span className={`w-6 h-6 rounded-full border flex items-center justify-center ${openSection === index ? 'border-white text-white' : 'border-[#00171F] text-[#00171F]'
+                                            }`}>
+                                            <span className="text-sm">
+                                                {openSection === index ? '−' : '+'}
+                                            </span>
+                                        </span>
+                                    </span>
+                                </button>
+                                <div
+                                    className={`transition-all duration-700 ease-in-out overflow-hidden ${openSection === index
+                                        ? 'max-h-[200px] opacity-100 pt-4'
+                                        : 'max-h-0 opacity-0'
+                                        }`}
+                                >
+                                    {openSection === index && (
+                                        <p className="text-white text-base font-normal leading-[25.6px] max-w-[722px]">
+                                            {plan.answer}
+                                        </p>
+                                    )}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Faq

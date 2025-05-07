@@ -1,0 +1,74 @@
+import React, { useState } from 'react';
+import { planComparisons } from '../utils/Helper';
+import InteriorDesigner from '../assets/images/webp/interior-designer-image.webp'
+import CloseArrow from '../assets/images/svg/close.svg'
+import OpenArrow from '../assets/images/svg/open.svg'
+
+const Comprehensive = () => {
+    const [openSection, setOpenSection] = useState(1);
+
+    const toggleMenu = (menu) => {
+        setOpenSection((prev) => (prev === menu ? null : menu));
+    };
+
+    return (
+        <div id='services' className='py-[162px] max-xl:py-[80px] max-lg:py-16'>
+            <div className="container w-full mx-auto px-5">
+                <div className="lg:flex justify-between">
+                    <div className='lg:w-6/12 w-full'>
+                        <h2 className='font-normal text-5xl max-md:text-[32px] text-[#00171F] max-w-[456px] leading-[52.8px] max-md:leading-10 pb-[46px] max-md:pb-7'>
+                            Comprehensive Utility <span className='font-bold'> Comparisons</span>
+                        </h2>
+                        <div className="space-y-6">
+                            {planComparisons.map((plan) => (
+                                <div
+                                    key={plan.id}
+                                    className="bg-white hover:shadow-lg rounded-md p-[14px] border transition-all duration-700 ease-in-out"
+                                >
+                                    <button
+                                        onClick={() => toggleMenu(plan.id)}
+                                        className="w-full text-left font-medium cursor-pointer text-2xl flex leading-[26.4px] items-center max-md:text-lg lg:whitespace-nowrap"
+                                    >
+                                        <img className='w-[64px] mr-6' src={plan.imgSrc} alt={plan.title} />
+                                        {plan.title}
+                                        <span className={`text-xl ${plan.marginClass}`}>
+                                            {openSection === plan.id ? (
+                                                <img
+                                                    src={OpenArrow}
+                                                    alt="Collapse"
+                                                    className="h-5 w-5 transition-all duration-700 rotate-180"
+                                                />
+                                            ) : (
+                                                <img
+                                                        src={CloseArrow}
+                                                    alt="Expand"
+                                                    className="h-5 w-5 transition-all duration-700 rotate-0"
+                                                />
+                                            )}
+                                        </span>
+                                    </button>
+                                    <div
+                                        className={`transition-all duration-700 ease-in-out overflow-hidden ${openSection === plan.id ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'
+                                            }`}
+                                    >
+                                        {openSection === plan.id && (
+                                            <p className="mt-2 text-gray-600 text-base font-normal leading-[25.6px] ml-[87px]">
+                                                {plan.description}
+                                            </p>
+                                        )}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className='lg:w-6/12 flex justify-end max-lg:justify-center max-lg:pt-10'>
+                        <img src={InteriorDesigner} alt="designer" className="max-w-[507px] max-lg:mx-auto max-xl:max-w-[465px] max-lg:w-full pointer-events-none transition-all duration-700 hover:scale-105" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Comprehensive;
+
