@@ -2,6 +2,14 @@ import Card1 from '../assets/images/webp/Card1.webp';
 import Card2 from '../assets/images/webp/Card2.webp';
 import Card3 from '../assets/images/webp/Card3.webp';
 import Card4 from '../assets/images/webp/Card4.webp';
+import firstEnergy from '../assets/images/webp/first-energy-logo.webp';
+import blueNrgLogo from '../assets/images/webp/blue-nrg-logo.webp';
+import dodoLogo from '../assets/images/webp/dodo-logo.webp';
+import originLogo from '../assets/images/webp/origin-logo.webp';
+import ovoLogo from '../assets/images/webp/ovo-logo.webp';
+import sumoLogo from '../assets/images/webp/sumo-logo.webp';
+import aglLogo from '../assets/images/webp/agl-logo.webp';
+
 
 export const HEADER_LIST = [
     {
@@ -31,13 +39,13 @@ export const HEADER_LIST = [
 ];
 
 export const LOGOS = [
-    { src: 'src/assets/images/webp/first-energy-logo.webp', alt: 'first-energy' },
-    { src: 'src/assets/images/webp/blue-nrg-logo.webp', alt: 'blue-nrg' },
-    { src: 'src/assets/images/webp/dodo-logo.webp', alt: 'dodo-logo' },
-    { src: 'src/assets/images/webp/origin-logo.webp', alt: 'origin-logo' },
-    { src: 'src/assets/images/webp/ovo-logo.webp', alt: 'ovo-logo' },
-    { src: 'src/assets/images/webp/sumo-logo.webp', alt: 'sumo-logo' },
-    { src: 'src/assets/images/webp/agl-logo.webp', alt: 'agl-logo' },
+    { src: firstEnergy, alt: 'first-energy' },
+    { src: blueNrgLogo, alt: 'blue-nrg' },
+    { src: dodoLogo, alt: 'dodo-logo' },
+    { src: originLogo, alt: 'origin-logo' },
+    { src: ovoLogo, alt: 'ovo-logo' },
+    { src: sumoLogo, alt: 'sumo-logo' },
+    { src: aglLogo, alt: 'agl-logo' },
 ];
 
 export const BENEFITS = [

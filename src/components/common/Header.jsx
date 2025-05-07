@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { HEADER_LIST } from '../../utils/Helper';
 import CustomButton from './CustomButton';
+import HeaderLogo from '../../assets/images/webp/header-logo.webp'
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -26,7 +27,7 @@ const Header = () => {
         <div className='pt-4 overflow-hidden min-[1921px]:max-w-[1920px] relative z-10 mx-auto' >
             <div className='container w-full mx-auto flex px-5 !justify-between items-center'>
                 <div className='relative z-20'>
-                    <a href="#"><img className='max-w-[105px]' src="src/assets/images/webp/header-logo.webp" alt="logo" /></a>
+                    <a href="#"><img className='max-w-[105px]' src={HeaderLogo} alt="logo" /></a>
                 </div>
                 <div className={`flex gap-6 max-lg:flex-col max-lg:justify-center max-lg:items-center  ${open ? 'max-lg:z-10 max-lg:translate-x-0 max-lg:bg-black max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:h-full max-lg:w-full justify-center items-center' : 'max-lg:-left-full max-lg:hidden'}`}>
                     {HEADER_LIST.map((obj, i) => (
