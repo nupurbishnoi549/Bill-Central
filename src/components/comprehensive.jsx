@@ -15,21 +15,23 @@ const Comprehensive = () => {
     return (
         <div id='services' className='py-[162px] max-xl:py-[80px] max-lg:py-16'>
             <div className="container w-full mx-auto px-5">
-                <div className="lg:flex justify-between">
+                <div className="lg:flex justify-between items-start ">
                     <div className='lg:w-6/12 w-full'>
                         <Heading headingText="Comprehensive Utility" headingSpanText="Comparisons" className="!max-w-[456px] !pb-[46px] max-md:!pb-7"/>
                         <div className="space-y-6">
                             {planComparisons.map((plan) => (
                                 <div
                                     key={plan.id}
-                                    className="bg-white hover:shadow-lg rounded-md p-[14px] border transition-all duration-700 ease-in-out"
+                                    className="bg-white hover:shadow-lg rounded-md p-[14px] border border-[#0000001A] transition-all duration-700 ease-in-out"
                                 >
                                     <button
                                         onClick={() => toggleMenu(plan.id)}
-                                        className="w-full text-left font-medium cursor-pointer text-2xl flex leading-[26.4px] items-center max-md:text-lg lg:whitespace-nowrap"
+                                        className="w-full text-left font-medium cursor-pointer text-2xl flex items-center justify-between max-md:text-lg lg:whitespace-nowrap"
                                     >
-                                        <img className='w-[64px] mr-6 pointer-events-none' src={plan.img} alt={plan.title} />
-                                        {plan.title}
+                                        <div className="flex items-center">
+                                            <img className='w-[64px] mr-6 pointer-events-none' src={plan.img} alt={plan.title} />
+                                            {plan.title}
+                                        </div>
                                         <span className={`text-xl ${plan.marginClass}`}>
                                             {openSection === plan.id ? (
                                                 <img
@@ -39,13 +41,14 @@ const Comprehensive = () => {
                                                 />
                                             ) : (
                                                 <img
-                                                        src={CloseArrow}
+                                                    src={CloseArrow}
                                                     alt="Expand"
                                                     className="h-5 w-5 transition-all duration-700 rotate-0"
                                                 />
                                             )}
                                         </span>
                                     </button>
+
                                     <div
                                         className={`transition-all duration-700 ease-in-out overflow-hidden ${openSection === plan.id ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'
                                             }`}
@@ -60,8 +63,8 @@ const Comprehensive = () => {
                             ))}
                         </div>
                     </div>
-                    <div className='lg:w-6/12 flex justify-end max-lg:justify-center max-lg:pt-10'>
-                        <img src={InteriorDesigner} alt="designer" className="max-w-[507px] max-lg:mx-auto max-xl:max-w-[465px] max-lg:w-full pointer-events-none transition-all duration-700 hover:scale-105" />
+                    <div className='lg:w-6/12 flex justify-end pt-12 max-lg:justify-center max-lg:pt-10'>
+                        <img src={InteriorDesigner} alt="designer" className="max-w-[530px] max-lg:mx-auto max-xl:max-w-[465px] max-lg:w-full pointer-events-none transition-all duration-700 hover:scale-105" />
                     </div>
                 </div>
             </div>
