@@ -4,14 +4,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Heading from './common/CommonHeading';
 
 const SimpleSteps = () => {
     return (
         <div>
             <div id='how-it-works' className="2xl:container max-sm:px-3 w-full mx-auto">
-                <h2 className='text-[#00171F] font-normal text-5xl max-md:text-3xl leading-[52.8px] pb-4 text-center'>
-                    Simple Steps to <span className='font-bold'>Switch</span>
-                </h2>
+                <Heading headingText="Simple Steps to " headingSpanText="Switch" className="!pb-4 !text-center"/>
                 <p className='font-normal text-base text-[#4B4B4B] max-w-[610px] leading-[25.6px] mx-auto text-center pb-[58px] max-md:pb-10 max-md:mx-auto max-md:px-3'>
                     Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum
                 </p>

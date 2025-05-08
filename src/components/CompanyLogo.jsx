@@ -1,10 +1,11 @@
 import React from 'react'
 import { LOGOS } from '../utils/Helper'
+import Heading from './common/CommonHeading'
 const CompaniesLogo = () => {
     return (
         <div>
             <div className="lg:container mx-auto w-full px-2">
-                <h2 className='font-normal text-[38px] max-md:text-3xl text-[#003459] max-w-[548px] leading-[41.8px] max-2xl:-mt-[75px] max-xl:-mt-0 max-xl:pt-10 max-xl:text-center max-xl:mx-auto'>More than <span className='text-[#00A8E8]'>80,000</span>+ companies trust bill central </h2>
+                <Heading headingText="More than " headingSpanText="80,000" spanText="!text-[#003459]" lastHeadingText="+ companies trust bill central " className=" !text-[38px] max-xl:!-mt-0 max-xl:!pt-10 max-xl:!text-center max-xl:!mx-auto !max-w-[548px] !leading-[41.8px] max-2xl:!-mt-[75px]" />
                 <div className="flex pt-[63px] max-xl:pt-12 max-md:pt-10 pb-4 overflow-auto">
                     {LOGOS.map((LOGO, index) => (
                         <img

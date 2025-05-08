@@ -1,14 +1,13 @@
 import React from 'react'
 import { cardData } from '../utils/Helper'
 import RightArrow from '../assets/images/svg/rightArrow.svg'
+import Heading from './common/CommonHeading';
 
 const ChooseFor = () => {
     return (
-        <div id='why-us' className='py-[162px] max-xl:py-[80px] max-md:py-16 max-sm:py-[44px]'>
+        <div id='why-us' className='pb-[162px] max-xl:pb-[80px] max-md:pb-16 max-sm:pb-[44px]'>
             <div className="container w-full mx-auto px-5">
-                <h2 className='font-normal text-5xl max-md:text-[32px] text-[#00171F] md:leading-[52.8px] pb-4 text-center'>
-                    Why Choose Us for <span className='font-bold'>Utilities</span>
-                </h2>
+                <Heading headingText="Why Choose Us for " headingSpanText="Utilities" className="!pb-4 !text-center"/>
                 <p className='pb-[58px] max-md:pb-7 text-[#00171F] text-base font-normal max-w-[620px] text-center mx-auto'>
                     This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!
                 </p>

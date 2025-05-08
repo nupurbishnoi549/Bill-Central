@@ -3,6 +3,7 @@ import { planComparisons } from '../utils/Helper';
 import InteriorDesigner from '../assets/images/webp/interior-designer-image.webp'
 import CloseArrow from '../assets/images/svg/close.svg'
 import OpenArrow from '../assets/images/svg/open.svg'
+import Heading from './common/CommonHeading';
 
 const Comprehensive = () => {
     const [openSection, setOpenSection] = useState(1);
@@ -16,9 +17,7 @@ const Comprehensive = () => {
             <div className="container w-full mx-auto px-5">
                 <div className="lg:flex justify-between">
                     <div className='lg:w-6/12 w-full'>
-                        <h2 className='font-normal text-5xl max-md:text-[32px] text-[#00171F] max-w-[456px] leading-[52.8px] max-md:leading-10 pb-[46px] max-md:pb-7'>
-                            Comprehensive Utility <span className='font-bold'> Comparisons</span>
-                        </h2>
+                        <Heading headingText="Comprehensive Utility" headingSpanText="Comparisons" className="!max-w-[456px] !pb-[46px] max-md:!pb-7"/>
                         <div className="space-y-6">
                             {planComparisons.map((plan) => (
                                 <div

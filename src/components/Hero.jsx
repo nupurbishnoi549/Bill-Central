@@ -2,6 +2,7 @@ import React from 'react'
 import HeroImg from '../assets/images/webp/hero-image.webp'
 import CustomButton from './common/CustomButton'
 import Header from './common/Header'
+import Heading from './common/CommonHeading'
 
 const Hero = () => {
     return (
@@ -10,9 +11,7 @@ const Hero = () => {
             <div className="container px-5 w-full mx-auto">
                 <div className="flex max-lg:flex-col gap-8 ">
                     <div className="lg:w-6/12 w-full text-center lg:text-left flex flex-col pt-[122px] max-lg:pt-10 max-md:pt-[44px]">
-                        <h1 className="text-6xl font-normal text-white leading-[110%] max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
-                            Easily Compare <span className="font-bold">Energy, Gas, And Internet</span> Plans
-                        </h1>
+                        <Heading headingText="Easily Compare " headingSpanText="Energy, Gas, and Internet" lastHeadingText=" Plans" className="!text-white md:!text-[64px]"/>
                         <p className="text-base font-normal text-white leading-custom-2xl pt-4 pb-[42px] max-lg:mx-auto max-lg:pb-6 max-md:text-sm max-sm:pt-2 max-w-[526px]">
                             Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search, letting you compare providers and make informed decisions, all in one place.
                         </p>
