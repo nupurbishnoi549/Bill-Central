@@ -10,10 +10,10 @@ const Faq = () => {
     }
 
     return (
-        <div id='faq' className='pt-[162px] max-xl:pt-[0px] pb-[327px] max-lg:pt-16'>
+        <div id='faq' className='pt-[162px] max-xl:pt-[0px] pb-[327px] max-lg:pt-0'>
             <div className="w-full px-5">
                 <div className="max-w-[850px] mx-auto">
-                    <Heading headingText="Frequently Asked " headingSpanText="Questions" className="!max-w-[620px] !mx-auto"/>
+                    <Heading headingText="Frequently Asked " headingSpanText="Questions" className="lg:!max-w-[620px] max-lg:flex justify-center !mx-auto"/>
                     <p className='text-base font-normal leading-[150%] max-w-[556px] mx-auto text-center pt-4 pb-14'>Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum</p>
                     <div className="space-y-6">
                         {faqData.map((plan, index) => (
