@@ -1,10 +1,6 @@
 import React from 'react'
 import FooterLogo from '../assets/images/webp/header-logo.webp'
-import { quickLinks, servicesData } from '../utils/Helper'
-import LinkDin from '../assets/images/svg/linkdin.svg';
-import insta from '../assets/images/svg/insta.svg';
-import facebook from '../assets/images/svg/facebook.svg';
-import twitter from '../assets/images/svg/twitter.svg';
+import { quickLinks, servicesData, socialLinks } from '../utils/Helper'
 import Newsletter from './Newsletter';
 
 const Footer = () => {
@@ -22,19 +18,17 @@ const Footer = () => {
                         </p>
                         <h2 className='pt-9 font-bold text-xl text-white'>Follow Us</h2>
                         <div className="flex gap-4 mt-4">
-                            <a href="https://in.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={LinkDin} alt="LinkDin" className="w-8 transition-transform duration-300 hover:scale-110" />
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={insta} alt="Instagram" className="w-8 transition-transform duration-300 hover:scale-110" />
-                            </a>
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={facebook} alt="Facebook" className="w-8 transition-transform duration-300 hover:scale-110" />
-                            </a>
-                            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={twitter} alt="Twitter" className="w-8 transition-transform duration-300 hover:scale-110" />
-                            </a>
+                            {socialLinks.map((item, index) => (
+                                <a href={item.link} key={index}>
+                                    <img
+                                        src={item.img}
+                                        alt={item.alt}
+                                        className="w-8 transition-transform duration-300 hover:scale-110"
+                                    />
+                                </a>
+                            ))}
                         </div>
+
                     </div>
                     <div className="flex flex-wrap gap-y-8 w-full lg:w-2/5">
                         <div className="w-1/2 md:w-1/3 lg:w-1/2">

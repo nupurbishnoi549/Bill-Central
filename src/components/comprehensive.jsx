@@ -28,7 +28,7 @@ const Comprehensive = () => {
                                         onClick={() => toggleMenu(plan.id)}
                                         className="w-full text-left font-medium cursor-pointer text-2xl flex leading-[26.4px] items-center max-md:text-lg lg:whitespace-nowrap"
                                     >
-                                        <img className='w-[64px] mr-6 pointer-events-none' src={plan.imgSrc} alt={plan.title} />
+                                        <img className='w-[64px] mr-6 pointer-events-none' src={plan.img} alt={plan.title} />
                                         {plan.title}
                                         <span className={`text-xl ${plan.marginClass}`}>
                                             {openSection === plan.id ? (

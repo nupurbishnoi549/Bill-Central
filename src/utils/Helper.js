@@ -1,7 +1,7 @@
-import Card1 from '../assets/images/webp/Card1.webp';
-import Card2 from '../assets/images/webp/Card2.webp';
-import Card3 from '../assets/images/webp/Card3.webp';
-import Card4 from '../assets/images/webp/Card4.webp';
+import Card1 from '../assets/images/webp/card1.webp';
+import Card2 from '../assets/images/webp/card2.webp';
+import Card3 from '../assets/images/webp/card3.webp';
+import Card4 from '../assets/images/webp/card4.webp';
 import firstEnergy from '../assets/images/webp/first-energy-logo.webp';
 import blueNrgLogo from '../assets/images/webp/blue-nrg-logo.webp';
 import dodoLogo from '../assets/images/webp/dodo-logo.webp';
@@ -21,43 +21,46 @@ import supportIcon from '../assets/images/svg/support.svg';
 import cameronImage from '../assets/images/svg/cameron.svg';
 import ronaldImage from '../assets/images/svg/ronald.svg';
 import jayShahImage from '../assets/images/svg/jay-shah.svg';
-import fiveStar from '../assets/images/svg/five-star.svg';
+import LinkDin from '../assets/images/svg/linkdin.svg';
+import insta from '../assets/images/svg/insta.svg';
+import facebook from '../assets/images/svg/facebook.svg';
+import twitter from '../assets/images/svg/twitter.svg';
 
 export const HEADER_LIST = [
     {
-        item: 'About',
+        title: 'About',
         link: '#about'
     },
     {
-        item: 'How It Works',
+        title: 'How It Works',
         link: '#how-it-works'
     },
     {
-        item: 'Services',
+        title: 'Services',
         link: '#services'
     },
     {
-        item: 'Testimonials',
+        title: 'Testimonials',
         link: '#testimonials'
     },
     {
-        item: 'Why Us',
+        title: 'Why Us',
         link: '#why-us'
     },
     {
-        item: 'FAQ',
+        title: 'FAQ',
         link: '#faq'
     },
 ];
 
 export const LOGOS = [
-    { src: firstEnergy, alt: 'first-energy' },
-    { src: blueNrgLogo, alt: 'blue-nrg' },
-    { src: dodoLogo, alt: 'dodo-logo' },
-    { src: originLogo, alt: 'origin-logo' },
-    { src: ovoLogo, alt: 'ovo-logo' },
-    { src: sumoLogo, alt: 'sumo-logo' },
-    { src: aglLogo, alt: 'agl-logo' },
+    { img: firstEnergy, alt: 'first-energy' },
+    { img: blueNrgLogo, alt: 'blue-nrg' },
+    { img: dodoLogo, alt: 'dodo-logo' },
+    { img: originLogo, alt: 'origin-logo' },
+    { img: ovoLogo, alt: 'ovo-logo' },
+    { img: sumoLogo, alt: 'sumo-logo' },
+    { img: aglLogo, alt: 'agl-logo' },
 ];
 
 export const BENEFITS = [
@@ -68,31 +71,31 @@ export const BENEFITS = [
 
 export const SIMPLE_STEPS_LIST = [
     {
-        stepImg: Card1,
+        img: Card1,
         alt: 'step-location',
         imgContent: '1. Enter Your Location and Preferences',
-        heading: '1. Your Location',
+        title: '1. Your Location',
         description: 'Enter your location and preferences to find the best energy, gas, and internet plans for you.'
     },
     {
-        stepImg: Card2,
+        img: Card2,
         alt: 'step-compare',
         imgContent: '2. Compare Providers',
-        heading: '2. Compare',
+        title: '2. Compare',
         description: 'Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum'
     },
     {
-        stepImg: Card3,
+        img: Card3,
         alt: 'step-switch-easily',
         imgContent: '3. Switch Easily',
-        heading: '3. Switch Easily',
+        title: '3. Switch Easily',
         description: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
     },
     {
-        stepImg: Card4,
+        img: Card4,
         alt: 'step-best-plan',
         imgContent: '4. Choose the Best Plan',
-        heading: '4. Best Plan',
+        title: '4. Best Plan',
         description: 'Enter your location and preferences to find the best energy, gas, and internet plans for you.'
     },
 ];
@@ -101,28 +104,28 @@ export const planComparisons = [
         id: 1,
         title: 'Electricity Plan Comparisons',
         description: "Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the best provider.",
-        imgSrc: electricitySvg,
+        img: electricitySvg,
         marginClass: 'ml-[106px] max-xl:ml-[53px] max-sm:ml-0 max-lg:ml-[253px]',
     },
     {
         id: 2,
         title: 'Gas Plan Comparisons',
         description: 'Compare gas plans to find the best rates and providers for your needs.',
-        imgSrc: gasSvg,
+        img: gasSvg,
         marginClass: 'ml-[163px] max-xl:ml-[113px] max-sm:ml-[11px] max-lg:ml-[313px]',
     },
     {
         id: 3,
         title: 'Internet Plan Comparisons',
         description: 'Find the best internet plans with fast speeds and great customer support.',
-        imgSrc: internetSvg,
+        img: internetSvg,
         marginClass: 'ml-[127px] max-xl:ml-[78px] max-sm:ml-0 max-lg:ml-[277px]',
     },
     {
         id: 4,
         title: 'Bundle Packages',
         description: 'Get the best value by bundling utilities and services together.',
-        imgSrc: bundleSvg,
+        img: bundleSvg,
         marginClass: 'ml-[220px] max-xl:ml-[175px] max-sm:ml-[61px] max-lg:ml-[375px]',
     },
 ];
@@ -130,7 +133,7 @@ export const planComparisons = [
 export const cardData = [
     {
         id: 1,
-        icon: starLikeIcon,
+        img: starLikeIcon,
         title: 'Tailored Recommendations',
         description:
             'Our platform analyzes your unique energy needs and preferences to suggest the best utility providers, ensuring you get the most personalized options available.',
@@ -138,28 +141,28 @@ export const cardData = [
     },
     {
         id: 2,
-        icon: simplifiedIcon,
+        img: simplifiedIcon,
         title: 'Simplified Comparison Process',
         description:
             'Our intuitive platform lets you compare the best utility providers in one place, helping you make a quick and informed decision.',
     },
     {
         id: 3,
-        icon: timeIcon,
+        img: timeIcon,
         title: 'Save Time and Money',
         description:
             'With up-to-date plans and pricing, you can be sure you’re getting the most competitive rates available.',
     },
     {
         id: 4,
-        icon: noServiceIcon,
+        img: noServiceIcon,
         title: 'No Service Interruptions',
         description:
             'We take care of the entire switching process so you can enjoy a hassle-free experience with zero downtime.',
     },
     {
         id: 5,
-        icon: supportIcon,
+        img: supportIcon,
         title: 'Comprehensive Support',
         description:
             'Whether you need assistance selecting a plan or during the switch, our dedicated support team is here to help every step of the way.',
@@ -170,30 +173,26 @@ export const testimonialsData = [
     {
         name: 'Camron',
         username: '@cameron',
-        image: cameronImage,
-        ratingImage: fiveStar,
-        text: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio adipiscing elit vitae vestibulum vestibulum.',
+        img: cameronImage,
+        description: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio adipiscing elit vitae vestibulum vestibulum.',
     },
     {
         name: 'Ronald',
         username: '@ronald',
-        image: ronaldImage,
-        ratingImage: fiveStar,
-        text: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio adipiscing elit vitae vestibulum vestibulum.',
+        img: ronaldImage,
+        description: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio adipiscing elit vitae vestibulum vestibulum.',
     },
     {
         name: 'Jay Shah',
         username: '@jayshah',
-        image: jayShahImage,
-        ratingImage: fiveStar,
-        text: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio adipiscing elit vitae vestibulum vestibulum.',
+        img: jayShahImage,
+        description: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio adipiscing elit vitae vestibulum vestibulum.',
     },
     {
         name: 'Ronald',
         username: '@ronald',
-        image: ronaldImage,
-        ratingImage: fiveStar,
-        text: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio adipiscing elit vitae vestibulum vestibulum.',
+        img: ronaldImage,
+        description: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio adipiscing elit vitae vestibulum vestibulum.',
     },
 ];
 
@@ -237,3 +236,26 @@ export const servicesData = [
     "Privacy Policy",
     "Terms of Services",
 ];
+
+export const socialLinks = [
+    {
+        link: "https://in.linkedin.com/",
+        img: LinkDin,
+        alt: "LinkedIn",
+    },
+    {
+        link: "https://www.instagram.com/",
+        img: insta,
+        alt: "Instagram",
+    },
+    {
+        link: "https://www.facebook.com/",
+        img: facebook,
+        alt: "Facebook",
+    },
+    {
+        link: "https://www.twitter.com/",
+        img: twitter,
+        alt: "Twitter",
+    },
+]

@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonArrow from '../../assets/images/svg/arrow.svg'
-import BlackButtonArrow from '../../assets/images/svg/Black-arrow.svg'
+import BlackButtonArrow from '../../assets/images/svg/black-arrow.svg'
 
 const CustomButton = ({ CustomButton , myClass="" , customClass , customClassBlack  ,whiteArrow , blackArrow  }) => {
     return (

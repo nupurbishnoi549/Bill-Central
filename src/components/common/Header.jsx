@@ -34,7 +34,7 @@ const Header = () => {
                         <div key={i}>
                             <ul>
                                 <li className='flex gap-1 cursor-pointer flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:h-0.5 after:bg-white pb-0.5'>
-                                    <a onClick={closeNavbar} href={obj.link} className=' text-base font-normal hover:underline transition-all duration-500 ease-linear text-white'>{obj.item}</a>
+                                    <a onClick={closeNavbar} href={obj.link} className=' text-base font-normal hover:underline transition-all duration-500 ease-linear text-white'>{obj.title}</a>
                                 </li>
                             </ul>
                         </div>

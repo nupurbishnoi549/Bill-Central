@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import 'swiper/css/navigation';
 import Heading from './common/CommonHeading.jsx';
+import ratingImage from '../assets/images/svg/five-star.svg';
 
 const Testimonials = () => {
     return (
@@ -40,15 +41,15 @@ const Testimonials = () => {
                             <SwiperSlide key={index}>
                                 <div className='shadow-lg border border-[#0000001A] p-5 rounded-md'>
                                     <div className='flex pb-6'>
-                                        <img className='max-w-[60px]' src={testimonial.image} alt={testimonial.name} />
+                                        <img className='max-w-[60px]' src={testimonial.img} alt={testimonial.name} />
                                         <div className='flex-col pl-2'>
                                             <p className='font-normal text-2xl leading-[36px]'>{testimonial.name}</p>
                                             <p className='font-normal text-base opacity-55'>{testimonial.username}</p>
                                         </div>
                                     </div>
-                                    <img src={testimonial.ratingImage} alt="Rating stars" />
+                                    <img src={ratingImage} alt="Rating stars" />
                                     <p className='pt-[18px] max-w-[324px] text-base font-normal leading-6'>
-                                        {testimonial.text}
+                                        {testimonial.description}
                                     </p>
 
                                 </div>
