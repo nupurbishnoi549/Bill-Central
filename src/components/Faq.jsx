@@ -19,9 +19,9 @@ const Faq = () => {
                         {faqData.map((plan, index) => (
                             <div
                                 key={index}
-                                className={`rounded-md p-[14px] transition-all duration-400 ease-in-out ${openSection === index
+                                className={`rounded-md p-6 transition-all duration-400 ease-in-out ${openSection === index
                                     ? 'bg-[#003459] py-6'
-                                        : 'shadow-xl py-6 border border-transparent'
+                                    : 'shadow-[0_4px_23.2px_0_#00000014] py-6 border border-transparent'
                                     }`}
                             >
 
@@ -32,9 +32,9 @@ const Faq = () => {
                                 >
                                     {plan.question}
                                     <span className="ml-auto">
-                                        <span className={`w-6 h-6 rounded-full border flex items-center justify-center ${openSection === index ? 'border-white text-white' : 'border-[#00171F] text-[#00171F]'
+                                        <span className={`size-7 rounded-full border-2 flex justify-center ${openSection === index ? 'border-white text-white' : 'border-[#00171F] text-[#00171F]'
                                             }`}>
-                                            <span className="text-sm">
+                                            <span className="text-lg items-center flex justify-center">
                                                 {openSection === index ? '−' : '+'}
                                             </span>
                                         </span>

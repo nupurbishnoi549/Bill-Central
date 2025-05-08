@@ -15,9 +15,9 @@ const Hero = () => {
                         <p className="text-base font-normal text-white leading-custom-2xl pt-4 pb-[42px] max-lg:mx-auto max-lg:pb-6 max-md:text-sm max-sm:pt-2 max-w-[526px]">
                             Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search, letting you compare providers and make informed decisions, all in one place.
                         </p>
-                        <div className='flex p-[9px] pl-[22px] bg-white rounded-full rounded-tl-none items-center max-w-[476px] justify-between max-sm:pl-3 max-lg:mx-auto'>
-                           <input type="text" placeholder='Start typing your address' className='placeholder:text-gray-500 placeholder:text-base placeholder:font-normal w-full !outline-none !bg-transparent placeholder:max-lg:text-sm mr-2' />
-                            <CustomButton CustomButton="Compare" customClass="-mr-3" whiteArrow={true} />
+                        <div className='flex p-[9px] pl-[22px] bg-white rounded-full border border-[#00000033] rounded-tl-none items-center max-w-[476px] justify-between max-sm:pl-3 max-lg:mx-auto'>
+                            <input type="text" placeholder='Start typing your address' className='placeholder:text-[#00171F] placeholder:text-base placeholder:font-normal w-full !outline-none !bg-transparent placeholder:max-lg:text-sm mr-2' />
+                            <CustomButton CustomButton="Compare" customClass="-mr-4" whiteArrow={true} />
                         </div>
                     </div>
                     <div className="lg:w-6/12 w-full max-lg:justify-center items-center flex pt-[55px] max-lg:pt-5 max-md:pt-[24px]">

@@ -21,7 +21,7 @@ const EnergyPlans = () => {
                                     className={`list-disc text-[#00171F] text-base font-normal leading-6 max-w-[382px] ${index !== 0 ? 'pt-2' : ''}`}
                                 > {BENEFITS}</li>))}
                         </ul>
-                        <CustomButton CustomButton="Compare With Us" customClass="-mr2 -ml-1" whiteArrow={true} />
+                        <CustomButton CustomButton="Compare With Us" customClass="-mr-4 -ml-1" whiteArrow={true} />
                     </div>
                 </div>
             </div>

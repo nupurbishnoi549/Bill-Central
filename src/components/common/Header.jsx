@@ -34,7 +34,7 @@ const Header = () => {
                         <div key={i}>
                             <ul>
                                 <li className='flex gap-1 cursor-pointer flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:h-0.5 after:bg-white pb-0.5'>
-                                    <a onClick={closeNavbar} href={obj.link} className=' text-base font-normal text-white'>{obj.item}</a>
+                                    <a onClick={closeNavbar} href={obj.link} className=' text-base font-normal hover:underline transition-all duration-500 ease-linear text-white'>{obj.item}</a>
                                 </li>
                             </ul>
                         </div>
@@ -43,7 +43,7 @@ const Header = () => {
                 </div>
                     <CustomButton CustomButton="Get Started" myClass='!pr-5 !pl-5 !text-black !bg-white max-lg:hidden' blackArrow={true} customClassBlack="-ml-9" />
                 <div onClick={toggleSidebar} className='z-[15] flex-col gap-1 lg:hidden flex'>
-                    <span className={`${open ? 'w-8 h-1 bg-white rotate-45 translate-y-3 duration-300 ease-linear rounded' : 'w-8 h-1 bg-white duration-300 ease-linear rounded'}`}></span>
+                    <span className={`${open ? 'w-8 h-1 bg-white  rotate-45 translate-y-3 duration-300 ease-linear rounded' : 'w-8 h-1 bg-white duration-300 ease-linear rounded'}`}></span>
                     <span className={`${open ? 'w-8 h-1 bg-white -translate-x-10 opacity-0 ' : 'w-8 h-1 rounded bg-white'}`}></span>
                     <span className={`${open ? 'w-8 h-1 bg-white -rotate-45 -translate-y-1 duration-300 ease-linear rounded' : 'w-8 h-1 bg-white duration-300 ease-linear rounded'}`}></span>
                 </div>

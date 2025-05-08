@@ -10,7 +10,7 @@ import Newsletter from './Newsletter';
 const Footer = () => {
     return (
         <footer id='footer' className="bg-[url(./assets/images/webp/Footer-bg.webp)] bg-cover bg-no-repeat px-5">
-            <div className="max-w-[1140px] container relative mx-auto  lg:pt-[232px] md:pt-[165px] pt-48">
+            <div className="max-w-[1140px] container relative mx-auto lg:pt-[232px] md:pt-[165px] pt-48">
                 <div className='absolute top-[-34%] max-xl:left-[10%] max-lg:left-[5%] max-md:left-[0%]'>
                     <Newsletter />
                 </div>
@@ -23,24 +23,23 @@ const Footer = () => {
                         <h2 className='pt-9 font-bold text-xl text-white'>Follow Us</h2>
                         <div className="flex gap-4 mt-4">
                             <a href="https://in.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={LinkDin} alt="LinkDin" className="w-8" />
+                                <img src={LinkDin} alt="LinkDin" className="w-8 transition-transform duration-300 hover:scale-110" />
                             </a>
                             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={insta} alt="Instagram" className="w-8" />
+                                <img src={insta} alt="Instagram" className="w-8 transition-transform duration-300 hover:scale-110" />
                             </a>
                             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={facebook} alt="Facebook" className="w-8" />
+                                <img src={facebook} alt="Facebook" className="w-8 transition-transform duration-300 hover:scale-110" />
                             </a>
                             <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={twitter} alt="Twitter" className="w-8" />
+                                <img src={twitter} alt="Twitter" className="w-8 transition-transform duration-300 hover:scale-110" />
                             </a>
                         </div>
                     </div>
-
                     <div className="flex flex-wrap gap-y-8 w-full lg:w-2/5">
                         <div className="w-1/2 md:w-1/3 lg:w-1/2">
                             <ul>
-                                <li className="text-lg font-normal text-white mb-3">Quick Link</li>
+                                <li className="font-bold text-xl text-white mb-3">Quick Link</li>
                                 {quickLinks.map((link, index) => (
                                     <li key={index}>
                                         <a href="#" className="text-white font-normal text-[13px] block mb-2">
@@ -52,10 +51,10 @@ const Footer = () => {
                         </div>
                         <div className="w-1/2 md:w-1/3 lg:w-1/4">
                             <ul>
-                                <li className="text-lg font-normal text-white mb-3">Company</li>
+                                <li className="font-bold text-xl text-white mb-3">Company</li>
                                 {servicesData.map((link, index) => (
                                     <li key={index}>
-                                        <a href="#" className="text-white font-normal text-[13px] block mb-2">
+                                        <a href="#" className="text-white font-normal  text-[13px] block mb-2">
                                             {link}
                                         </a>
                                     </li>

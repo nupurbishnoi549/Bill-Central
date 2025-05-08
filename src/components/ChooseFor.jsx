@@ -14,24 +14,26 @@ const ChooseFor = () => {
                 <div className="flex flex-col lg:flex-row gap-6">
                     <div className="bg-[#003459] p-10 rounded-md">
                         <div className="md:flex lg:flex-col justify-between">
-                            <img src={cardData[0].icon} alt={cardData[0].title} className="xl:w-[277px] w-[200px]" />
+                            <img src={cardData[0].icon} alt={cardData[0].title} className="xl:w-[277px] w-[200px] pointer-events-none" />
                             <div className="flex-col">
                                 <h3 className="font-normal text-2xl text-white pt-7 pb-3">{cardData[0].title}</h3>
                                 <p className="font-normal text-base text-white xl:max-w-[344px] max-w-[300px]">{cardData[0].description}</p>
                                 <a href="#">
                                     <img
-                                        className="bg-white py-[12px] px-[24px] mt-[22px] rounded-[446px]"
+                                        className="bg-white py-[12px] px-[24px] mt-[22px] rounded-[446px] transition-all duration-300 hover:bg-blue-500 hover:scale-110"
                                         src={RightArrow}
                                         alt="right-arrow"
                                     />
                                 </a>
+
+
                             </div>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-[2]">
                         {cardData.slice(1).map((card) => (
-                            <div key={card.id} className="border shadow-lg rounded-md p-6">
-                                <img src={card.icon} alt={card.title} />
+                            <div key={card.id} className="border border-[#00171F1A] shadow-lg rounded-md p-6">
+                                <img src={card.icon} alt={card.title} className='pointer-events-none'/>
                                 <h3 className="font-normal text-2xl text-black pt-7 pb-3">{card.title}</h3>
                                 <p className="font-normal text-base text-[#00171F]">{card.description}</p>
                             </div>
