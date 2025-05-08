@@ -10,7 +10,7 @@ const Faq = () => {
     }
 
     return (
-        <div id='faq' className='pt-[162px] max-xl:pt-[80px] pb-[327px] max-lg:pt-16'>
+        <div id='faq' className='pt-[162px] max-xl:pt-[0px] pb-[327px] max-lg:pt-16'>
             <div className="w-full px-5">
                 <div className="max-w-[850px] mx-auto">
                     <Heading headingText="Frequently Asked " headingSpanText="Questions" className="!max-w-[620px] !mx-auto"/>

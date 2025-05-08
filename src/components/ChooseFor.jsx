@@ -5,7 +5,7 @@ import Heading from './common/CommonHeading';
 
 const ChooseFor = () => {
     return (
-        <div id='why-us' className='pb-[162px] max-xl:pb-[80px] max-md:pb-16 max-sm:pb-[44px]'>
+        <div id='why-us' className='pb-[162px] max-xl:pb-[0px] max-md:pb-16 max-sm:pb-[44px]'>
             <div className="container w-full mx-auto px-5">
                 <Heading headingText="Why Choose Us for " headingSpanText="Utilities" className="!pb-4 !text-center"/>
                 <p className='pb-[58px] max-md:pb-7 text-[#00171F] text-base font-normal max-w-[620px] text-center mx-auto'>
