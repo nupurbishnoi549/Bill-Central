@@ -5,7 +5,7 @@ import Header from './common/Header'
 
 const Hero = () => {
     return (
-        <div className="bg-cover bg-no-repeat max-2xl:bg-contain bg-top max-xl:bg-cover  max-lg:pb-12 bg-[url(src/assets/images/webp/hero-bg-image.webp)]">
+        <div className="bg-[url(./assets/images/webp/hero-bg-image.webp)] bg-cover bg-no-repeat max-2xl:bg-contain bg-top max-xl:bg-cover max-lg:pb-12">
             <Header />
             <div className="container px-5 w-full mx-auto">
                 <div className="flex max-lg:flex-col gap-8 ">

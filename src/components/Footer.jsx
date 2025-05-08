@@ -9,7 +9,7 @@ import Newsletter from './Newsletter';
 
 const Footer = () => {
     return (
-        <footer id='footer' className="  bg-[url(./assets/images/webp/Footer-bg.webp)] bg-cover bg-no-repeat px-5">
+        <footer id='footer' className="bg-[url(./assets/images/webp/Footer-bg.webp)] bg-cover bg-no-repeat px-5">
             <div className="max-w-[1140px] container relative mx-auto  lg:pt-[232px] md:pt-[165px] pt-48">
                 <div className='absolute top-[-34%] max-xl:left-[10%] max-lg:left-[7%] max-md:left-[0%]'>
                     <Newsletter />
