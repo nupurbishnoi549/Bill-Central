@@ -23,9 +23,6 @@ import ronaldImage from '../assets/images/svg/ronald.svg';
 import jayShahImage from '../assets/images/svg/jay-shah.svg';
 import fiveStar from '../assets/images/svg/five-star.svg';
 
-
-
-
 export const HEADER_LIST = [
     {
         item: 'About',
