@@ -50,6 +50,7 @@ const Testimonials = () => {
                                     <p className='pt-[18px] max-w-[324px] text-base font-normal leading-6'>
                                         {testimonial.text}
                                     </p>
+
                                 </div>
                             </SwiperSlide>
                         ))}
