@@ -1,5 +1,5 @@
 import Card1 from '../assets/images/webp/card1.webp';
-import Card2 from '../assets/images/webp/card2.webp';
+import Card2 from '../../assets/images/webp/card2.webp';
 import Card3 from '../assets/images/webp/card3.webp';
 import Card4 from '../assets/images/webp/card4.webp';
 import firstEnergy from '../assets/images/webp/first-energy-logo.webp';
