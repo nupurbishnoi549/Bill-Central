@@ -1,5 +1,5 @@
 import React from 'react'
-import { cardData } from '../utils/Helper'
+import { cardData } from '../utils/helper'
 import RightArrow from '../assets/images/svg/rightArrow.svg'
 import Heading from './common/CommonHeading';
 
@@ -7,7 +7,7 @@ const ChooseFor = () => {
     return (
         <div id='why-us' className='pb-[162px] max-xl:pb-[0px] max-md:pb-16 max-sm:pb-[44px]'>
             <div className="container w-full mx-auto px-5">
-                <Heading headingText="Why Choose Us for " headingSpanText="Utilities" className="!pb-4 md:text-center"/>
+                <Heading headingText="Why Choose Us for " headingSpanText="Utilities" className="!pb-4 md:text-center" />
                 <p className='pb-[58px] max-md:pb-7 text-[#00171F] text-base font-normal max-w-[620px] md:text-center mx-auto'>
                     This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!
                 </p>
@@ -33,7 +33,7 @@ const ChooseFor = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-[2]">
                         {cardData.slice(1).map((card) => (
                             <div key={card.id} className="border border-[#00171F1A] shadow-lg rounded-md p-6">
-                                <img src={card.img} alt={card.title} className='pointer-events-none'/>
+                                <img src={card.img} alt={card.title} className='pointer-events-none' />
                                 <h3 className="font-normal text-2xl text-black pt-7 pb-3">{card.title}</h3>
                                 <p className="font-normal text-base text-[#00171F]">{card.description}</p>
                             </div>

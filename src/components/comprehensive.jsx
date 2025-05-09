@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { planComparisons } from '../utils/Helper';
+import { planComparisons } from '../utils/helper';
 import InteriorDesigner from '../assets/images/webp/interior-designer-image.webp'
 import CloseArrow from '../assets/images/svg/close.svg'
 import OpenArrow from '../assets/images/svg/open.svg'

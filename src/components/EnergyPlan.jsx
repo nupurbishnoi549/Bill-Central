@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomButton from '../components/common/CustomButton';
-import { BENEFITS } from '../utils/Helper';
-import EnergyImg from'../assets/images/webp/switching-energy-image.webp'
+import { BENEFITS } from '../utils/helper';
+import EnergyImg from '../assets/images/webp/switching-energy-image.webp'
 
 const EnergyPlans = () => {
     return (
@@ -22,10 +22,10 @@ const EnergyPlans = () => {
                                         className={`list-disc text-[#00171F] text-base font-normal leading-6 max-w-[382px] w-full ${index !== 0 ? 'pt-2' : ''}`}
                                     > {BENEFITS}</li>))}
                             </ul>
-                       </div>
-                     
+                        </div>
+                        <div className='md:justify-center lg:flex'>
                             <CustomButton CustomButton="Compare With Us" customClass="-mr-4 -ml-1" whiteArrow={true} />
-                      
+                        </div>
                     </div>
                 </div>
             </div>

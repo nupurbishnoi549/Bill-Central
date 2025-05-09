@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { HEADER_LIST } from '../../utils/Helper';
+import { HEADER_LIST } from '../../utils/helper';
 import CustomButton from './CustomButton';
 import HeaderLogo from '../../assets/images/webp/header-logo.webp'
 
@@ -41,7 +41,7 @@ const Header = () => {
                     ))}
                     <CustomButton CustomButton="Get Started" myClass='!pr-5 !pl-5 !text-black !bg-white lg:hidden block' blackArrow={true} customClassBlack="-ml-9" />
                 </div>
-                    <CustomButton CustomButton="Get Started" myClass='!pr-5 !pl-5 !text-black !bg-white max-lg:hidden' blackArrow={true} customClassBlack="-ml-9" />
+                <CustomButton CustomButton="Get Started" myClass='!pr-5 !pl-5 !text-black !bg-white max-lg:hidden' blackArrow={true} customClassBlack="-ml-9" />
                 <div onClick={toggleSidebar} className='z-[15] flex-col gap-1 lg:hidden flex'>
                     <span className={`${open ? 'w-8 h-1 bg-white  rotate-45 translate-y-3 duration-300 ease-linear rounded' : 'w-8 h-1 bg-white duration-300 ease-linear rounded'}`}></span>
                     <span className={`${open ? 'w-8 h-1 bg-white -translate-x-10 opacity-0 ' : 'w-8 h-1 rounded bg-white'}`}></span>

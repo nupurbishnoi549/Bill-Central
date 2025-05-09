@@ -1,6 +1,6 @@
 import React from 'react'
 import FooterLogo from '../assets/images/webp/header-logo.webp'
-import { quickLinks, servicesData, socialLinks } from '../utils/Helper'
+import { quickLinks, servicesData, socialLinks } from '../utils/helper'
 import Newsletter from './Newsletter';
 
 const Footer = () => {

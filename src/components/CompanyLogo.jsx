@@ -1,5 +1,5 @@
 import React from 'react'
-import { LOGOS } from '../utils/Helper'
+import { LOGOS } from '../utils/helper'
 import Heading from './common/CommonHeading'
 const CompaniesLogo = () => {
     return (
