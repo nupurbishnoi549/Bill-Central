@@ -17,7 +17,7 @@ const Comprehensive = () => {
             <div className="container w-full mx-auto px-5">
                 <div className="lg:flex justify-between items-start ">
                     <div className='lg:w-6/12 w-full'>
-                        <Heading headingText="Comprehensive Utility" headingSpanText="Comparisons" className="lg:!max-w-[456px] max-lg:flex justify-center mx-auto !pb-[46px] max-md:!pb-7"/>
+                        <Heading headingText="Comprehensive Utility" headingSpanText="Comparisons" className="lg:!max-w-[456px] max-lg:flex max-lg:justify-center max-lg:mx-auto !pb-[46px] max-md:!pb-7"/>
                         <div className="space-y-6">
                             {planComparisons.map((plan) => (
                                 <div
