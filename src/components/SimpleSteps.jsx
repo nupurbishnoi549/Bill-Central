@@ -10,8 +10,8 @@ const SimpleSteps = () => {
     return (
         <div>
             <div id='how-it-works' className="2xl:container max-sm:px-3 w-full mx-auto">
-                <Heading headingText="Simple Steps to " headingSpanText="Switch" className="!pb-4 !text-center"/>
-                <p className='font-normal text-base text-[#4B4B4B] max-w-[610px] leading-[25.6px] mx-auto text-center pb-[58px] max-md:pb-10 max-md:mx-auto max-md:px-3'>
+                <Heading headingText="Simple Steps to " headingSpanText="Switch" className="!pb-4 md:text-center"/>
+                <p className='font-normal text-base text-[#4B4B4B] max-w-[610px] leading-[25.6px] mx-auto md:text-center pb-[58px] max-md:pb-10 max-md:mx-auto md:px-3 '>
                     Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum
                 </p>
                 <Swiper

@@ -4,8 +4,8 @@ import Heading from './common/CommonHeading'
 const CompaniesLogo = () => {
     return (
         <div>
-            <div className="lg:container mx-auto w-full px-2">
-                <Heading headingText="More than " headingSpanText="80,000" spanText="!text-[#00A8E8]" lastHeadingText="+ companies trust bill central " className=" !text-[38px] max-xl:!-mt-0 max-xl:!pt-10 max-xl:!text-center max-xl:!mx-auto !max-w-[548px] !leading-[41.8px] max-2xl:!-mt-[70px]" />
+            <div className="lg:container xl:mx-auto w-full px-2">
+                <Heading headingText="More than " headingSpanText="80,000" spanText="!text-[#00A8E8]" lastHeadingText="+ companies trust bill central " className=" !text-[38px] max-xl:!-mt-0 max-xl:!pt-10 md:!text-center xl:!text-left max-xl:!mx-auto xl:!max-w-[548px] !leading-[41.8px] max-2xl:!-mt-[70px]" />
                 <div className="flex pt-[63px] max-xl:pt-12 max-md:pt-10 pb-4 overflow-auto">
                     {LOGOS.map((item, index) => (
                         <img

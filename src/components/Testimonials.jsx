@@ -11,8 +11,8 @@ const Testimonials = () => {
     return (
         <div id='testimonials' className=':py-[162px] max-xl:py-[60px] max-md:py-16 max-sm:py-[44px]'>
             <div className="container max-w-[1284px] mx-auto px-5">
-                <Heading headingText="Our " headingSpanText="Testimonials" className="!text-center !pb-4 max-md:!pb-2"/>
-                <p className='font-normal text-base text-[#00171F] text-center max-w-[490px] mx-auto'>
+                <Heading headingText="Our " headingSpanText="Testimonials" className="md:text-center max-w-[565px] mx-auto !pb-4 max-md:!pb-2"/>
+                <p className='font-normal text-base text-[#00171F] md:text-center max-w-[490px] mx-auto'>
                     Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum
                 </p>
 
